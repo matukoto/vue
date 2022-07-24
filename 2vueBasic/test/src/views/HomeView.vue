@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <MyButton :greet="greetText"></MyButton>
+    <p>{{ greetText }}</p>
+    <MyButton :greet="greetText" @click="onMyButtonClicked"></MyButton>
   </div>
 </template>
 
@@ -15,5 +16,9 @@ import MyButton from "@/components/MyButton.vue"; // @ is an alias to /src
 })
 export default class HomeView extends Vue {
   public greetText = "Hello";
+
+  public onMyButtonClicked() {
+    this.greetText = "こんにちは";
+  }
 }
 </script>
