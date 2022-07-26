@@ -13,6 +13,10 @@ export default class ResetButton extends Vue {
   @Prop()
   public value!: string;
 
+  public created() {
+    this.initialValue = this.value;
+  }
+
   @Emit()
   public input(value: string) {
     // 何もしない
