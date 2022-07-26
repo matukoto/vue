@@ -6,7 +6,7 @@
 import { Component, Emit, Prop, Vue } from "vue-property-decorator";
 
 @Component
-export default class ResetButton extends vue {
+export default class ResetButton extends Vue {
   @Prop()
   public initialValue!: string;
 

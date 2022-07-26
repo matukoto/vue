@@ -13,7 +13,7 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import MyButton from "@/components/MyButton.vue"; // @ is an alias to /src
-import ResetButton from "@components/ResetButton.vue";
+import ResetButton from "@/components/ResetButton.vue";
 
 @Component({
   components: {
