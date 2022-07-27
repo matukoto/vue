@@ -25,14 +25,14 @@ import ResetButton from "@/components/ResetButton.vue";
 })
 export default class HomeView extends Vue {
   public count = 0;
-  public isRegulars = false;
   public greetText = "Hello";
+
+  public get isRegulars(): boolean {
+    return this.count > 5;
+  }
 
   public onMyButtonClicked(count: number) {
     this.count = count;
-    if (this.count > 5) {
-      this.isRegulars = true;
-    }
     this.greetText = "こんにちは";
   }
 }
