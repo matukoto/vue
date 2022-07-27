@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Watch, Vue } from "vue-property-decorator";
 import MyButton from "@/components/MyButton.vue"; // @ is an alias to /src
 import ResetButton from "@/components/ResetButton.vue";
 
@@ -29,6 +29,13 @@ export default class HomeView extends Vue {
 
   public get isRegulars(): boolean {
     return this.count > 5;
+  }
+
+  @Watch("count")
+  public countChanged() {
+    if (this.count === 5) {
+      alert("あなたは常連です");
+    }
   }
 
   public onMyButtonClicked(count: number) {
