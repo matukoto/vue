@@ -4,7 +4,9 @@
     <p>{{ greetText }}</p>
     <p v-if="isRegulars">いつもありがとうございます</p>
     <p>
-      <MyButton :greet="greetText" @click="onMyButtonClicked"></MyButton>
+      <MyButton :greet="greetText" @click="onMyButtonClicked"
+        >挨拶する</MyButton
+      >
     </p>
     <p>
       <ResetButton v-model="greetText"></ResetButton>
