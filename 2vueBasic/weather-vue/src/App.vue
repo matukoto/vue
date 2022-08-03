@@ -1,16 +1,9 @@
 <template>
-  <h1>Hello</h1>
-  <p class="test">GoodBye</p>
+  <Title />
 </template>
 
-<script lang="ts"></script>
-<style>
-h1 {
-  color: red;
-}
+<script lang="ts">
+import Title from "@components/Title.vue";
+</script>
 
-.test {
-  font-style: italic;
-  letter-spacing: 10px;
-}
-</style>
+<style></style>
