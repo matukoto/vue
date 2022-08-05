@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-import Title from "@components/Title.vue";
+import Title from "@components/WeatherTitle.vue";
 </script>
 
 <style></style>
