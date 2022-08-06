@@ -1,7 +1,6 @@
 <template>
   <WetherTitle />
   <WetherForm />
-  <button @click="getWeather">getWetherテスト</button>
 </template>
 
 <script lang="ts">
