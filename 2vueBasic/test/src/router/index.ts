@@ -3,7 +3,7 @@ import VueRouter, { RouteConfig } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 
 Vue.use(VueRouter);
-
+// ここで URL とかを指定しているのか
 const routes: Array<RouteConfig> = [
   {
     path: "/",
